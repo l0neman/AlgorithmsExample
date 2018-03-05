@@ -1,9 +1,11 @@
 package com.example.algorthms.util;
 
+import com.example.algorthms.swordrefers.bean.ComplexListNode;
 import com.example.algorthms.swordrefers.bean.ListNode;
 import com.example.algorthms.swordrefers.bean.TreeNode;
 import edu.princeton.cs.algs4.StdOut;
 
+import java.util.Collection;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -24,6 +26,16 @@ public class Printer {
       }
       StdOut.print(a[i / column][i % column]);
       StdOut.print('\t');
+    }
+    StdOut.println();
+  }
+
+  /**
+   * 打印 char 型数组
+   */
+  public static <T> void print(Collection<T> c) {
+    for (T anA : c) {
+      StdOut.print(anA + "\t");
     }
     StdOut.println();
   }
@@ -62,39 +74,57 @@ public class Printer {
   }
 
   /**
+   * 打印复杂链表
+   */
+  public static void print(ComplexListNode head) {
+    ComplexListNode t = head;
+    while (t != null) {
+      ComplexListNode sibling = t.sibling;
+      if (sibling == null) {
+        StdOut.print(t.value + "~null");
+      } else {
+        StdOut.print(t.value + "~" + sibling.value);
+      }
+      StdOut.print(' ');
+      t = t.next;
+    }
+    StdOut.println();
+  }
+
+  /**
    * 二叉树前序遍历
    */
-  public static void preOrderPrint(TreeNode root) {
+  public static void printPreOrder(TreeNode root) {
     if (root == null) { return; }
     StdOut.println(root.value);
-    preOrderPrint(root.left);
-    preOrderPrint(root.right);
+    printPreOrder(root.left);
+    printPreOrder(root.right);
   }
 
   /**
    * 二叉树中序遍历
    */
-  public static void inOrderPrint(TreeNode root) {
+  public static void PrintInOrder(TreeNode root) {
     if (root == null) { return; }
-    inOrderPrint(root.left);
+    PrintInOrder(root.left);
     StdOut.println(root.value);
-    inOrderPrint(root.right);
+    PrintInOrder(root.right);
   }
 
   /**
    * 二叉树后序遍历
    */
-  public static void postOrderPrint(TreeNode root) {
+  public static void printPostOrder(TreeNode root) {
     if (root == null) { return; }
-    postOrderPrint(root.left);
-    postOrderPrint(root.right);
+    printPostOrder(root.left);
+    printPostOrder(root.right);
     StdOut.println(root.value);
   }
 
   /**
    * 二叉树层序遍历
    */
-  public static void levelOrderPrint(TreeNode root) {
+  public static void printLevelOrder(TreeNode root) {
     Queue<TreeNode> queue = new LinkedList<>();
     queue.add(root);
     int i = 0;

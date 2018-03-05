@@ -16,8 +16,8 @@ public class ConstructBinaryTreeTest {
 
     TreeNode tree = constructBinaryTree.construct();
     StdOut.println("preorder: ");
-    Printer.preOrderPrint(tree);
+    Printer.printPreOrder(tree);
     StdOut.println("inorder: ");
-    Printer.inOrderPrint(tree);
+    Printer.PrintInOrder(tree);
   }
 }
