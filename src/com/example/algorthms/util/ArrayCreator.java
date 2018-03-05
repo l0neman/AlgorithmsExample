@@ -1,4 +1,4 @@
-package com.example.algorthms.swordrefers.util;
+package com.example.algorthms.util;
 
 public class ArrayCreator {
 

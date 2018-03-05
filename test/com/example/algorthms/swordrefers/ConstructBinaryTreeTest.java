@@ -1,11 +1,9 @@
 package com.example.algorthms.swordrefers;
 
 import com.example.algorthms.swordrefers.bean.TreeNode;
-import com.example.algorthms.swordrefers.util.Printer;
+import com.example.algorthms.util.Printer;
 import edu.princeton.cs.algs4.StdOut;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class ConstructBinaryTreeTest {
 

@@ -1,4 +1,4 @@
-package com.example.algorthms.swordrefers.util;
+package com.example.algorthms.util;
 
 import com.example.algorthms.swordrefers.bean.ListNode;
 import com.example.algorthms.swordrefers.bean.TreeNode;
@@ -13,7 +13,7 @@ import java.util.Queue;
 public class Printer {
 
   /**
-   * 打印int型二维数组
+   * 打印 int 型二维数组
    */
   @SuppressWarnings("Duplicates")
   public static void print(int[][] a, int column) {
@@ -29,11 +29,21 @@ public class Printer {
   }
 
   /**
-   * 打印char型数组
+   * 打印 char 型数组
    */
   public static void print(char[] a) {
     for (char anA : a) {
       StdOut.print(anA);
+    }
+    StdOut.println();
+  }
+
+  /**
+   * 打印 int 型数组
+   */
+  public static void print(int[] a) {
+    for (int anA : a) {
+      StdOut.print(anA + "\t");
     }
     StdOut.println();
   }

@@ -1,9 +1,7 @@
 package com.example.algorthms.swordrefers;
 
-import com.example.algorthms.swordrefers.util.Printer;
+import com.example.algorthms.util.Printer;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class ReplaceBlankTest {
 
