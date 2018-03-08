@@ -1,5 +1,6 @@
-package com.example.algorthms;
+package com.example.algorthms.swordrefers;
 
+import com.example.algorthms.swordrefers.ConvertBinarySearchTree;
 import com.example.algorthms.swordrefers.bean.TreeNode;
 import com.example.algorthms.util.Printer;
 import edu.princeton.cs.algs4.StdOut;

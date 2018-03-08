@@ -1,4 +1,4 @@
-package com.example.algorthms;
+package com.example.algorthms.swordrefers;
 
 import com.example.algorthms.swordrefers.bean.TreeNode;
 

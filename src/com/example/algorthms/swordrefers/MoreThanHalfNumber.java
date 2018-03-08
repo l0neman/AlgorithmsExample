@@ -1,5 +1,10 @@
-package com.example.algorthms;
+package com.example.algorthms.swordrefers;
 
+/**
+ * 面试题29：数组中出现次数超过一般的数字
+ *
+ * 数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。
+ */
 public class MoreThanHalfNumber {
   public static int moreThanHalf(int[] nums) {
     if (nums == null || nums.length == 0) {
