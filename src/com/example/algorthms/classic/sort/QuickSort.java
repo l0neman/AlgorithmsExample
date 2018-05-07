@@ -2,37 +2,35 @@ package com.example.algorthms.classic.sort;
 
 public class QuickSort {
 
-  public static void sort(int[] array) {
-    sort(array, 0, array.length - 1);
+  public static void sort(int[] a) {
+    sort(a, 0, a.length - 1);
   }
 
-  private static void sort(int[] array, int start, int end) {
+  private static void sort(int[] a, int start, int end) {
     if (start >= end) {
       return;
     }
-    int index = partition(array, start, end);
-    sort(array, start, index - 1);
-    sort(array, index + 1, end);
+    int index = partition(a, start, end);
+    sort(a, start, index - 1);
+    sort(a, index + 1, end);
   }
 
   @SuppressWarnings("Duplicates")
-  private static int partition(int[] array, int start, int end) {
+  private static int partition(int[] a, int start, int end) {
     int left = start;
     int right = end;
-    int flag = array[start];
+    int flag = a[start];
     while (left < right) {
-      while (left < right && array[right] >= flag) {
+      while (left < right && a[right] >= flag) {
         right--;
       }
-      while (left < right && array[left] <= flag) {
+      while (left < right && a[left] <= flag) {
         left++;
       }
-      int t = array[left];
-      array[left] = array[right];
-      array[right] = t;
+      Utils.exch(a, left, right);
     }
-    array[start] = array[left];
-    array[left] = flag;
+    a[start] = a[left];
+    a[left] = flag;
     return left;
   }
 }
