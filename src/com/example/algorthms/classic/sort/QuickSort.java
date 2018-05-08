@@ -1,5 +1,8 @@
 package com.example.algorthms.classic.sort;
 
+/**
+ * 平均时间复杂度
+ */
 public class QuickSort {
 
   public static void sort(int[] a) {
