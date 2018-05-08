@@ -34,14 +34,16 @@ public class MergeSort {
 
   private static void sortRange(int[] a, int start, int end) {
     if (end <= start) { return; }
-    // 小规模数组使用插入排序
+    /* 小规模数组使用插入排序 */
     if (end - start < 10) {
       InsertionSort.sort(a, start, end);
+      return;
     }
     int mid = start + (end - start) / 2;
     sortRange(a, start, mid);
     sortRange(a, mid + 1, end);
-    if (a[mid] < a[mid + 1]) { return; }
+    /* 已经有序 */
+    if (a[mid] <= a[mid + 1]) { return; }
     merge(a, start, mid, end);
   }
 
