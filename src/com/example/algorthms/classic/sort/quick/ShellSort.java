@@ -1,4 +1,6 @@
-package com.example.algorthms.classic.sort;
+package com.example.algorthms.classic.sort.quick;
+
+import com.example.algorthms.classic.sort.Utils;
 
 public class ShellSort {
   public static void sort(int[] a) {

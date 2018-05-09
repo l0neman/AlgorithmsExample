@@ -1,4 +1,7 @@
-package com.example.algorthms.classic.sort;
+package com.example.algorthms.classic.sort.simple;
+
+import com.example.algorthms.classic.sort.Utils;
+import com.example.algorthms.classic.sort.quick.InsertionSort;
 
 /**
  * 快速排序
@@ -11,9 +14,9 @@ public class QuickSort {
   /***
    * 三向切分，适用于大量重复元素
    *
-   * +-----+----+--+----+-+-----+--+----+---+
-   * |start| <f |lt| =f |i| /// |gt| >f |end|
-   * +-----+----+--+----+-+-----+--+----+---+
+   * +-----+------+--+------+-+-------+--+------+---+
+   * |start|  <f  |lt|  =f  |i|  ///  |gt|  >f  |end|
+   * +-----+------+--+------+-+-------+--+------+---+
    */
   public static void sort3Way(int[] a) {
     sort2Way(a, 0, a.length - 1);

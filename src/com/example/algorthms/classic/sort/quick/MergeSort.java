@@ -1,4 +1,4 @@
-package com.example.algorthms.classic.sort;
+package com.example.algorthms.classic.sort.quick;
 
 /**
  * 归并排序

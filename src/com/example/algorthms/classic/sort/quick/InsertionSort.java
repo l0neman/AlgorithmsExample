@@ -1,4 +1,6 @@
-package com.example.algorthms.classic.sort;
+package com.example.algorthms.classic.sort.quick;
+
+import com.example.algorthms.classic.sort.Utils;
 
 /**
  * 插入排序
