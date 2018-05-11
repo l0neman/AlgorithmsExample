@@ -15,7 +15,7 @@ public class FindInPartiallySortedMatrixTest {
         4, 7, 10, 13,
         6, 8, 11, 15
     );
-    Printer.print(a, 4);
+    Printer.Array.print(a, 4);
     StdOut.println(FindInPartiallySortedMatrix.find(a, 4, 4, 7));
   }
 
@@ -27,7 +27,7 @@ public class FindInPartiallySortedMatrixTest {
         4, 7, 10, 13,
         6, 8, 11, 15
     );
-    Printer.print(a, 4);
+    Printer.Array.print(a, 4);
     StdOut.println(FindInPartiallySortedMatrix.find2(a, 4, 4, 7));
   }
 }

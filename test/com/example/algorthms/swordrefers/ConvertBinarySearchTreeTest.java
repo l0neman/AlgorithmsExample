@@ -30,7 +30,7 @@ public class ConvertBinarySearchTreeTest {
     n21r.left = n32l;
     n21r.right = n32r;
 
-    Printer.printLevelOrder(root);
+    Printer.Tree.printLevelOrder(root);
 
     ConvertBinarySearchTree convert = new ConvertBinarySearchTree();
     TreeNode head = convert.convert(root);

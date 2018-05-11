@@ -10,8 +10,8 @@ public class KMPMatchTest {
   public void getNext() {
     int[] next = KMPMatch.getNext("ababaaaba".toCharArray());
     int[] nextVal = KMPMatch.getNextVal("ababaaaba".toCharArray());
-    Printer.print(next);
-    Printer.print(nextVal);
+    Printer.Array.print(next);
+    Printer.Array.print(nextVal);
 
     StdOut.println(KMPMatch.indexOf("abcababc", "cabab"));
   }

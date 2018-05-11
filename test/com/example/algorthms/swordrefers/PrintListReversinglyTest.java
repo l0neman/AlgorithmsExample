@@ -21,7 +21,7 @@ public class PrintListReversinglyTest {
     n3.link(n4);
 
     StdOut.print("src: ");
-    Printer.print(n0);
+    Printer.LinkedList.print(n0);
 
     PrintListReversingly.printWithRecursively(n0);
   }
@@ -40,7 +40,7 @@ public class PrintListReversinglyTest {
     n3.link(n4);
 
     StdOut.print("src: ");
-    Printer.print(n0);
+    Printer.LinkedList.print(n0);
 
     PrintListReversingly.printWithStack(n0);
   }

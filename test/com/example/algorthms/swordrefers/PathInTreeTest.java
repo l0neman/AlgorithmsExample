@@ -23,7 +23,7 @@ public class PathInTreeTest {
     n21l.left = n31l;
     n21l.right = n31r;
 
-    Printer.printLevelOrder(root);
+    Printer.Tree.printLevelOrder(root);
 
     PathInTree pathInTree = new PathInTree();
     pathInTree.findInPath(root, 22);

@@ -15,9 +15,8 @@ public class PathInTree {
   private LinkedList<Integer> path = new LinkedList<>();
 
   public void findInPath(TreeNode root, int target) {
-    if (root == null) {
-      return;
-    }
+    if (root == null) { return; }
+
     findPathRecursive(root, target, 0);
   }
 
@@ -25,7 +24,7 @@ public class PathInTree {
     path.offer(root.value);
     if (root.left == null && root.right == null) {
       if (sum + root.value == target) {
-        Printer.print(path);
+        Printer.Collection.print(path);
       }
     } else {
       sum += root.value;

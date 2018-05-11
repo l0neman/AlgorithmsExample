@@ -5,8 +5,6 @@ import com.example.algorthms.util.Printer;
 import edu.princeton.cs.algs4.StdOut;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class FirstCommonNodesInListsTest {
 
   @Test
@@ -28,8 +26,8 @@ public class FirstCommonNodesInListsTest {
     l4.link(l5);
     l5.link(l6);
 
-    Printer.print(l1);
-    Printer.print(l4);
+    Printer.LinkedList.print(l1);
+    Printer.LinkedList.print(l4);
 
     StdOut.println(
         FirstCommonNodesInLists.findFirstCommonNode2(l1, l4).value);

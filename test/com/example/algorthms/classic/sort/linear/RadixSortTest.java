@@ -5,13 +5,12 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class CountingSortTest {
+public class RadixSortTest {
 
   @Test
   public void sort() {
-    int[] a = {2, 5, 3, 0, 5, 8, 0, 3};
-    final int[] b = new int[a.length];
-    CountingSort.sort(a, b, 8);
-    Printer.Array.print(b);
+    int[] n = {329, 457, 657, 839, 436, 720, 355};
+    RadixSort.sort(n, 3);
+    Printer.Array.print(n);
   }
 }

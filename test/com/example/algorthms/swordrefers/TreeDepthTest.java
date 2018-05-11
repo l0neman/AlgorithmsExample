@@ -31,7 +31,7 @@ public class TreeDepthTest {
 
     t31r.left = t42l;
 
-    Printer.printLevelOrder(root);
+    Printer.Tree.printLevelOrder(root);
 
     StdOut.println(TreeDepth.isBalanced(root));
   }

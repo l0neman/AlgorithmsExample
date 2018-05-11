@@ -12,6 +12,6 @@ public class ShellSortTest {
         52, 48, 13, 57, 94, 25, 85, 4, 52, 45, 245, 184, 264, 215
     };
     ShellSort.sort(array);
-    Printer.print(array);
+    Printer.Array.print(array);
   }
 }

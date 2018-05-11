@@ -2,6 +2,9 @@ package com.example.algorthms.classic.sort.linear;
 
 import java.util.Arrays;
 
+/**
+ * 计数排序
+ */
 public class CountingSort {
   public static void sort(int[] a, int[] b, int k) {
     int[] temp = new int[k + 1];

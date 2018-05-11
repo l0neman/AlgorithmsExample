@@ -17,9 +17,9 @@ public class CopyComplexList {
       return null;
     }
     createCopyList(head);
-    Printer.print(head);
+    Printer.LinkedList.print(head);
     linkSiblingNodes(head);
-    Printer.print(head);
+    Printer.LinkedList.print(head);
     return unlinkSrcNodes(head);
   }
 

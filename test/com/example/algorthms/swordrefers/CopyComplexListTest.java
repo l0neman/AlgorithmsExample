@@ -23,8 +23,8 @@ public class CopyComplexListTest {
     b.sibling = e;
     d.sibling = b;
 
-    Printer.print(a);
+    Printer.LinkedList.print(a);
 
-    Printer.print(CopyComplexList.clone(a));
+    Printer.LinkedList.print(CopyComplexList.clone(a));
   }
 }
